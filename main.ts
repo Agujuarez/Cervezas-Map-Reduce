@@ -53,3 +53,12 @@ const cantidadIPA = cervezas.reduce((total, cerveza) => {
 
 console.log(`cantidad total de cervezas IPA: ${cantidadIPA}`);
 
+const cervezasSuaves = cervezas.filter(cerveza => cerveza.amargor === "Suave");
+const cantidadesSuaves = cervezasSuaves.map(cerveza => cerveza.cantidad);
+
+console.log("Cantidades de cervezas suaves:", cantidadesSuaves);
+
+const cervezasAmargas = cervezas.filter(cerveza => cerveza.amargor === "Amargo");
+const maltaAmargas = cervezasAmargas.map(cerveza => cerveza.malta);
+
+console.log("Cantidades de maltas Amargas:", maltaAmargas);
