@@ -1,11 +1,11 @@
 export class Cerveza {
-    private graduacionAlcoholica: number;
-    private malta: string;
-    private cantidad: number;
-    private amargor: string;
-    private lupulo: string;
-    private marca: string;
-    private levadura: string;
+    graduacionAlcoholica: number;
+    malta: string;
+    cantidad: number;
+    amargor: string;
+    lupulo: string;
+    marca: string;
+     levadura: string;
 
     constructor(
         graduacionAlcoholica: number,

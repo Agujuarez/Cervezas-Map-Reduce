@@ -16,3 +16,7 @@ const cervezas: Cerveza[] = [cerveza1, cerveza2, cerveza3, cerveza4, cerveza5, c
 
 console.log(`lista de cervezas: ${JSON.stringify(cervezas)}`);
 
+const cantidadTotal = cervezas.reduce((total, cerveza) => total + cerveza.cantidad, 0);
+
+console.log(`cantidad total de cervezas: ${cantidadTotal}`);
+
