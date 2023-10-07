@@ -20,3 +20,18 @@ const cantidadTotal = cervezas.reduce((total, cerveza) => total + cerveza.cantid
 
 console.log(`cantidad total de cervezas: ${cantidadTotal}`);
 
+const cantidadTotal2 = cervezas.reduce((total, cerveza) => { 
+    return total + cerveza.cantidad
+}, 0);
+
+console.log(`cantidad total de cervezas 2: ${cantidadTotal2}`);
+
+const cantidadSuave = cervezas.reduce((total, cerveza) => {
+    if (cerveza.amargor === "Suave") {
+        return total + cerveza.cantidad
+    }
+    return total 
+}, 0);
+
+console.log(`cantidad total de cervezas suaves: ${cantidadSuave}`);
+
